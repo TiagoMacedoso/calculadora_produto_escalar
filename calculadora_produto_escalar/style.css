@@ -1,0 +1,130 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    user-select: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgb(0, 217, 255), rgb(0, 255, 136));
+}
+
+header{
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+form{
+    width: 90%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 1rem;
+}
+
+form section:not(:nth-child(1)){
+    padding-top: 1rem;
+}
+
+form section div:not(:nth-child(1)){
+    padding-top: .8rem;
+}
+
+form section div label{
+    padding-left: .5rem;
+}
+
+form section div input{
+    width: 100%;
+    background-color: rgba(9, 255, 0, 0.616);
+    border: 0px;
+    border-radius: .5rem;
+    padding: .3rem 0rem .3rem .8rem;
+}
+
+form section div input:focus{
+    outline: 0;
+    background-color: rgb(11, 69, 71);
+    color: white;
+}
+
+form section div input::placeholder{
+    opacity: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form section div input:focus::placeholder{
+    opacity: 1;
+}
+
+form section:nth-child(2) p{
+    font-size: medium;
+    text-align: center;
+}
+
+form section:nth-child(3){
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+form section:nth-child(3) div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+form section:nth-child(3) div button{
+    border: none;
+    background-color: rgb(67, 255, 67);
+    color: black;
+    padding: .8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.resultado{
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.resultado h1{
+    text-transform: uppercase;
+    font-size: x-large;
+    color: rgb(255, 0, 0);
+}
+
+@media (min-width: 800px) {
+    form section:nth-child(3) div button:hover{
+        background-color: rgb(11, 69, 71);
+        color: white;   
+    }
+
+    form section:nth-child(3) div button{
+        width: 75%;
+        border-radius: 15px;
+    }
+}

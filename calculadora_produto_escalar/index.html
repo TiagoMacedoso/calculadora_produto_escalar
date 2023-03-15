@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto escalar</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora de Produto Escalar</h1>
+    </header>
+
+    <form>
+
+        <section>
+            <div>
+                <label>Insira o 1º vetor:</label>
+                <input type="text" name="vetor" id="vetor1" placeholder="1,2,3,4">
+            </div>
+
+            <div>
+                <label>Insira o 2º vetor:</label>
+                <input type="text" name="vetor" id="vetor2" placeholder="4,3,2,1">
+            </div>
+        </section>
+
+        <section>
+            <p>
+                Use vírgulas para separar os valores e não coloque espaço.
+            </p>
+        </section>
+
+        <section>
+            <div>
+                <button type="reset" id="btnApagar">Apagar</button>
+            </div>
+            
+            <div>
+                <button id="btnCalcular">Calcular</button>
+            </div>
+        </section>
+
+    </form>
+
+    <div class="resultado">
+        <h1 id="resultado">RESULTADO</h1>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
